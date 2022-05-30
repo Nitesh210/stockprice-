@@ -187,11 +187,13 @@ section{
   <p class="search__title">
       Go ahead, hover over search
   </p><br>
-  <input class="search__input" type="text" placeholder="Search">
+  <form action="" method="get">
+  <input class="search__input" name="search_inp" type="text" placeholder="Search">
 </div>
-
+</form>
 <div class="credits__container">
   <p class="credits__text">Enter the stock symbol for ex.AAPL for Apple stock</p>
+  <p>{{txt}}</p>
 </div>
 </div>
 <!-- partial -->  
@@ -218,15 +220,15 @@ section{
     <table cellpadding="0" cellspacing="0" border="0">
       <tbody>
         <tr>
-          <td>AAC</td>
-          <td>AUSTRALIAN COMPANY </td>
-          <td>$1.38</td>
-          <td>+2.01</td>
-          <td>-0.36%</td>
-          <td>-0.36%</td>
+          <td>{{ltp}}</td>
+          <td>{{open}} </td>
+          <td>{{High}}</td>
+          <td>{{Low}}</td>
+          <td>{{Close}}</td>
+          <td>{{chng}}</td>
           <td>-0.36%</td>
         </tr>
-        <tr>
+        <!-- <tr>
           <td>AAD</td>
           <td>AUSENCO</td>
           <td>$2.38</td>
@@ -442,7 +444,7 @@ section{
           <td>$1.02</td>
           <td>-1.01</td>
           <td>+2.36%</td>
-        </tr>
+        </tr> -->
       </tbody>
     </table>
   </div>
